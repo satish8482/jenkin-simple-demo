@@ -1,0 +1,8 @@
+-#!/bin/sh      
+ssh  a1243428@10.132.33.164 <<EOF        
+ cd /jerkin-simple-demo
+ git pull       
+ npm install --production       
+ pm2 restart all
+ exit       
+EOF
